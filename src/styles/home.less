@@ -1,0 +1,188 @@
+// 公告列表
+.notice-container {
+    margin: 15px;
+    .ant-list-items .ant-list-item:hover {
+        background: @c-primary-hint;
+        color: @primary-color;
+        a {
+            color: @primary-color;
+        }
+    }
+}
+// 公告详情
+.noticeDetail-container {
+    width: 80%;
+    margin: 0 auto;
+    .ntc-title {
+        font-size: 24px;
+        padding: 20px;
+        margin-top: 15px;
+        border-bottom: 1px solid #f1f1f1;
+        text-align: center;
+        color: #333333;
+    }
+    .ntc-time {
+        color: @c-gray;
+        font-size: 14px;
+        padding: 15px 0;
+        text-align: right;
+    }
+    .ntc-content {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+}
+// 资费说明
+.fundDetail-container {
+    .fund-card {
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        margin-bottom: 40px;
+        border: 0;
+        border-radius: 4px;
+    }
+    table.gridtable {
+        font-size: 14px;
+        color: #333;
+        border-width: 1px;
+        border-color: #ccc;
+        border-collapse: collapse;
+        width: 100%;
+        th {
+            font-size: 15px;
+            padding: 17px;
+            border: 1px solid #ccc;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        td {
+            padding: 14px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+        .td-center {
+            text-align: center;
+        }
+    }
+}
+// 公用表格 tab标签样式
+.comtb-container {
+    border: 1px solid #f1f1f1;
+    margin-top: 20px;
+    .tabs-container {
+        background-color: #fafafa;
+        padding: 15px;
+        padding-bottom: 0;
+        .ant-tabs-card {
+            border-bottom: 0;
+            .ant-tabs-bar {
+                margin: 0;
+            }
+        }
+    }
+    .notice-container {
+        padding: 10px;
+    }
+}
+//  每日领鲸币
+.dailyCoin-container {
+    .title {
+        font-size: 24px;
+        color: #444;
+        line-height: 24px;
+        margin: 20px 0;
+        font-weight: 500;
+    }
+    .tb-card {
+        border: 1px solid @bd-color;
+        .tb-list {
+            .line-b;
+            text-align: center;
+            .tb-item {
+                font-size: 14px;
+                padding: 10px;
+                color: #888;
+            }
+        }
+    }
+    .xb-list {
+        padding: 30px;
+        .xb-item {
+            border: 1px solid #d8d8d8;
+            text-align: center;
+            cursor: pointer;
+            height: 185px;
+            &:hover,
+            &.active {
+                border: 4px solid @primary-color;
+                -webkit-box-shadow: 0 2px 12px @primary-color;
+                box-shadow: 0 2px 12px @primary-color;
+                border-radius: 4px;
+            }
+            .price {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 30px;
+                .left {
+                    font-size: 34px;
+                    color: #444;
+                    text-align: center;
+                    line-height: 34px;
+                    font-weight: 500;
+                    margin-right: 5px;
+                }
+                .right {
+                    width: 43px;
+                    height: 16px;
+                    background: @c-orange;
+                    border-radius: 2px;
+                    text-align: center;
+                    line-height: 16px;
+                    color: #fff;
+                    font-size: 12px;
+                }
+            }
+            .text {
+                font-size: 12px;
+                margin-top: 10px;
+                margin-bottom: 25px;
+            }
+            .time {
+                border-top: 1px dashed #f1f1f1;
+                padding: 20px;
+                font-size: 16px;
+            }
+        }
+    }
+    .xb-btn {
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        width: 180px;
+        border-radius: 30px;
+        color: #fff;
+        background-color: @primary-color;
+        margin: 40px auto 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .notice-container {
+        margin: 0;
+    }
+    .noticeDetail-container {
+        width: 100%;
+        .ntc-title {
+            font-size: 18px;
+            padding: 10px 0;
+        }
+    }
+    .fundDetail-container {
+        .fund-card {
+            margin-bottom: 30px;
+            .ant-card-body {
+                padding: 12px;
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+.batch-form-page {
+    padding: 10px;
+    position: relative;
+    // height: 100%;
+    // height: 80vh;
+    // ===
+    height: calc(100% - 23px);
+    overflow: scroll;
+    .tab_type {
+        display: flex;
+        align-items: center;
+        max-width: 60%;
+    }
+}
+
+// 二级导航tag
+.tag-box {
+    background-color: #fff;
+    padding: 5px 10px 0; //++
+    // margin-bottom: 5px;
+    height: 40px; //++
+    white-space: nowrap; //++
+    overflow-x: scroll; //++
+    .ant-tag.cur {
+        background-color: @primary-color;
+        color: #fff;
+    }
+    .ant-tag {
+        font-size: 14px;
+    }
+}
+
+.case-maintain-page {
+    background-color: #fff;
+    overflow: scroll; //++
+    .ft_btns {
+        position: fixed;
+        width: 100%;
+        bottom: 4px;
+        text-align: center;
+    }
+}
+
+// 治疗登记弹出窗
+.case-order-modal {
+    .treat_form_item {
+        margin-top: 10px;
+        label {
+            margin-right: 10px;
+            min-width: 75px;
+            display: inline-block;
+            text-align: right;
+            font-size: 14px;
+            i {
+                color: red !important;
+                margin-right: 4px;
+            }
+        }
+        .ant-input,
+        .ant-select {
+            width: 150px;
+        }
+    }
+    .case_detail {
+        margin-top: 10px;
+        padding: 0 15px;
+    }
+    .time_wrap {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap; //++
+    }
+}
+
+// -------------------预约-------------------
+.query-patient-page {
+    height: 100%;
+    overflow: scroll;
+}
+
+.treat-register-page {
+    height: 100%;
+    overflow: scroll;
+}

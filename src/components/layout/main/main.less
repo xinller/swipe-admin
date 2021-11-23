@@ -1,0 +1,50 @@
+.app-main {
+  height: calc(100%);
+
+  .cmh_hidden_sider {
+    background: rgb(245, 247, 249);
+    overflow: hidden;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .ant-menu {
+      background-color: transparent;
+    }
+    .ant-menu-inline,
+    .ant-menu-vertical-left {
+      border-right: 0px;
+    }
+  }
+  .icon_visible_md {
+    display: none;
+  }
+  @media screen and (max-width: 992px) {
+    .cmh_hidden_sider {
+      display: none;
+    }
+    .icon_visible_md {
+      display: inline-block;
+    }
+    .icon_hidden_md {
+      display: none;
+    }
+  }
+
+  .main-content-con {
+    .tag-nav-wrapper {
+      padding: 0;
+      height: 30px;
+      background: #f0f0f0;
+      flex: 0 0 auto;
+    }
+
+    .content-wrapper {
+      padding: 5px 15px 15px;
+      height: calc(100% - 48px);
+      overflow-y: auto;
+      position: relative;
+    }
+  }
+}

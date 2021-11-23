@@ -1,0 +1,180 @@
+.storeCenter-container {
+    .store-banner {
+        margin-top: 10px;
+        img {
+            width: 100%;
+        }
+    }
+    .store-notice {
+        font-size: 14px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        .notice_wrap {
+            color: #575757;
+            display: flex;
+            align-items: center;
+            .bell {
+                color: #9d9d9d;
+                font-size: 18px;
+                margin-right: 5px;
+            }
+        }
+    }
+    .store-user {
+        padding: 20px 0;
+        border-bottom: 1px solid #f1f1f1;
+    }
+    .store-ensure {
+        padding: 20px 0;
+    }
+    .store-asset {
+        background-color: @c-lgray;
+        padding: 20px 40px;
+        border-radius: 6px;
+        margin-top: 18px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        .desc {
+            font-size: 14px;
+        }
+        .num {
+            font-size: 40px;
+            color: #333333;
+            margin-top: 10px;
+        }
+        .store-btn {
+            background-color: @primary-color;
+            color: #fff;
+            font-size: 14px;
+            border-radius: 20px;
+            width: 100px;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+            display: inline-block;
+            &:hover {
+                background-color: tint(@primary-color, 20%);
+            }
+        }
+    }
+
+    .store-note {
+        .note-item {
+            padding: 35px;
+            border: 1px solid #e8eff5;
+            font-size: 13px;
+            .title {
+                font-size: 16px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            .detail {
+                padding: 5px 0;
+            }
+            .tip {
+                color: @c-red;
+                font-size: 12px;
+                cursor: pointer;
+                line-height: 30px;
+            }
+            .question {
+                li {
+                    margin-top: 15px;
+                    img.play {
+                        width: 16px;
+                        margin-right: 5px;
+                    }
+                    a {
+                        color: #666666;
+                    }
+                    a.say {
+                        color: #333333;
+                    }
+                    a:hover {
+                        color: @primary-color;
+                    }
+                }
+            }
+            .teach-img {
+                text-align: center;
+                position: relative;
+                img {
+                    height: 76px;
+                    max-width: 100%;
+                }
+                img.play_btn {
+                    width: 40px;
+                    height: 40px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+            .video-span {
+                cursor: pointer;
+                &:hover {
+                    color: @primary-color;
+                }
+            }
+        }
+    }
+
+    // 小屏幕样式
+    @media screen and (max-width: 992px) {
+        .store-banner {
+            img {
+                height: 80px;
+                width: auto;
+                max-width: 100%;
+            }
+        }
+        .store-notice {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .store-user {
+            padding: 10px 0;
+            margin-top: 5px;
+        }
+        .store-ensure {
+            padding: 10px 0;
+        }
+        .store-asset {
+            margin-top: 10px;
+            margin-bottom: 16px;
+            padding: 20px 20px;
+            .desc {
+                font-size: 13px;
+            }
+            .num {
+                font-size: 30px;
+                margin-top: 8px;
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .store-asset {
+            .num {
+                font-size: 26px;
+            }
+            .store-btn {
+                font-size: 12px;
+                border-radius: 20px;
+                width: 80px;
+                text-align: center;
+                height: 32px;
+                line-height: 32px;
+                display: inline-block;
+            }
+        }
+    }
+    @media screen and (max-width: 420px) {
+        .store-asset {
+            .num {
+                font-size: 22px;
+            }
+        }
+    }
+}
